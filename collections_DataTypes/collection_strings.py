@@ -189,9 +189,17 @@
 # print("")
 
 # Converting a string to lower without using inbuilt function
-w1 = "WELCOME TO MY WORLD"
-for i in w1:
-        low_ = chr(ord(i)+32)
-        low1_=low_.replace('@', " ")
-        print(low1_, end="")
+# w1 = "WELCOME TO MY WORLD"
+# for i in w1:
+#         low_ = chr(ord(i)+32)
+#         low1_=low_.replace('@', " ")
+#         print(low1_, end="")
+
+# String to extract vowels in a given string
+w1 = "vishnu kulkarni"
+i = 0
+while i< len(w1):
+        if w1[i] in "aeiou":
+                print(w1[i],end="")
+        i+=1
 
