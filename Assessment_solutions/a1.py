@@ -77,8 +77,8 @@ from collections import defaultdict
 
 # Write a pgm to iterate through list and
 # build a new dictionary only if the items of the list has odd numbers of characters
-names = ['apple', 'yahoo', 'google', 'gmail', 'walmart', 'flipkart', 'facebook', 'amazon']
-d = {}
+# names = ['apple', 'yahoo', 'google', 'gmail', 'walmart', 'flipkart', 'facebook', 'amazon']
+# d = {}
 # for i in names:
 #     if i not in d:
 #         if len(i)%2 == 1:
@@ -92,12 +92,13 @@ d = {}
 # print(d)
 
 # wap to find the third largest number in list
-# numbers = [10, 20, 30, 40, 50]
-# for _ in range(len(numbers-1)):
-#     for i in range(len(numbers-1)):
-#         if numbers[i] > numbers[i+1]:
-#             numbers[i], numbers[i+1] = numbers[i+1], numbers[i]
-# print(numbers[2])
+# num = [10, 20, 50, 30, 40, 45]
+#
+# for _ in range(len(num)-1):
+#     for i in range(len(num)-1):
+#         if num[i] > num[i+1]:
+#             num[i], num[i+1] = num[i+1], num[i]
+# print(num[-3])
 
 # wap to print all numeric values in a list
 # items = ['apple', 1.2, 'google', 12.6, 26, 100]
@@ -130,11 +131,34 @@ names1 = ['apple', 'google', 'yahoo', 'google', 'facebook', 'gmail', 'yahoo']
 # print(dd)
 
 # wap program to get index of each item
-names2 = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'google', 'gmail', 'gmail', 'gmail']
-d1 = {}
-for index, item in enumerate(names2):
-    d1[item] =
-print(d1)
+# names2 = ['apple', 'google', 'apple', 'yahoo', 'yahoo', 'google', 'gmail', 'gmail', 'gmail']
+# d1 = {}
+# for index, item in enumerate(names2):
+#         if item not in d1:
+#             d1[item] = [index]
+#         else:
+#             d1[item] += [index]
+# print(d1)
+# wap to group files with same extensions
+# files = ['apple.txt', 'yahoo.pdf', 'gmail.pdf', 'google.txt', 'amazon.pdf', 'facebook.txt']
+# d = {}
+# for i in files:
+#     file, ext = i.split(".")
+#     if ext not in d:
+#         d[ext] = [file]
+#     else:
+#         d[ext] += [file]
+# print(d)
+# write a function to create a dictionary of word and its count pair in given string
+s = 'It is a very good book and reading book is a good habit'
+d = {}
+def func_(string_):
+    words = string_.split()
+    for word in words:
+            d[word] = string_.count(word)
+    return d
+print(func_(s))
+
 
 
 
