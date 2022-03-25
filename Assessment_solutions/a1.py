@@ -150,23 +150,122 @@ names1 = ['apple', 'google', 'yahoo', 'google', 'facebook', 'gmail', 'yahoo']
 #         d[ext] += [file]
 # print(d)
 # write a function to create a dictionary of word and its count pair in given string
-s = 'It is a very good book and reading book is a good habit'
-d = {}
-def func_(string_):
-    words = string_.split()
-    for word in words:
-            d[word] = string_.count(word)
-    return d
-print(func_(s))
+# s = 'It is a very good book and reading book is a good habit'
+# d = {}
+# def func_(string_):
+#     words = string_.split()
+#     for word in words:
+#         if word not in d:
+#             d[word] = string_.count(word)
+#     return d
+# print(func_(s))
 
+# write a function to count the number of elements present in the list without using in built in function
+# a = ['hai', 'guys', 'welcome', 'to', 'my', 'channel']
+#
+# def func_(list_):
+#     count = 0
+#     for items in list_:
+#         count += 1
+#     return count
+# print(func_(a))
 
+# write a function to return the words starting with vowels
+# b = "please like, share and subscribe"
+# def func_(string_):
+#     l =[]
+#     for i in string_.split():
+#         if i[0] in "aeiouAEIOU":
+#             l.append(i)
+#     return l
+# print(func_(b))
 
+# write a function to check if the given number is prime or not num = 12
+# def prime_(num):
+#     for i in range(2, num):
+#         if num % i == 0:
+#             print("Number is not a prime")
+#             break
+#     else:
+#         print("Number is a prime")
+# prime_(12)
 
+# write a function to return nth fibonacci number, n=10
+# def fib_(n, a = 0, b = 1):
+#     for i in range(n):
+#         c = a + b
+#         a = b
+#         b = c
+#     print(a)
+# fib_(10)
 
+# write a function to reverse a string without using inbuilt functions
+# s = "vishnu"
+# def rev(string_):
+#     res = ""
+#     for i in string_:
+#         res = i+res
+#     return res
+# print(rev(s))
 
+# write a function to return a prime number present after the given number
+# if the given no is prime then return the same ,num =12
+# def prime_after(num):
+#     while num > 1:
+#         for i in range (2, num):
+#             if num % i == 0:
+#                 num +=1
+#                 break
+#         else:
+#             return num
+# print(prime_after(24))
 
+# write a function to return a string by converting uppercase to lower case and vice versa
+# without using in built functions
+# s = "Don't forget to press the bell icon:)"
+# def func_(string_):
+#     for i in string_:
+#         if "a" <= i <= "z":
+#            up_=chr(ord(i)-32)
+#            print(up_,end="")
+#         elif "A" <= i <= "Z":
+#             low_ = chr(ord(i)+32)
+#             print(low_,end="")
+#         else:
+#             continue
+# func_(s)
 
+# write a function to print the fibonacci series till the user given number
+# def func_(num, a = 0, b =1 ):
+#     while a <=num:
+#         print(a)
+#         c = a + b
+#         a = b
+#         b = c
+#
+# user_ = int(input("Enter the user number: "))
+# func_(user_)
 
+# write a list comprehension to create a list with the items of the list which has even number of characters
+# names = ['apple', 'yahoo', 'gmail', 'walmart', 'flipkart', 'facebbook', 'amazon']
+#  Normal code
+# l =[]
+# for i in names:
+#     if len(i)%2 == 0:
+#         l.append(i)
+# print(l)
+#  List comprehension
+# l1 = [i for i in names if len(i)%2==0]
+# print(l1)
 
+# write a list comprehension to get only the duplicate elements in the list
+names = ['apple', 'google', 'apple', 'yahoo', 'google']
+# Normal code
+count = 0
+l1=[]
+for i in names:
+    if names.count(i)>1:
+        count+=1
+        l1.append(i)
 
-
+print(l1)
