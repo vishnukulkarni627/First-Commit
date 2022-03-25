@@ -4,3 +4,5 @@ d = {}
 if s[0] in "aeiouAEIOU":
     d[s] = len(s)
 print(d)
+
+
