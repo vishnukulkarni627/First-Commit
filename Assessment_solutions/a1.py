@@ -259,13 +259,13 @@ names1 = ['apple', 'google', 'yahoo', 'google', 'facebook', 'gmail', 'yahoo']
 # print(l1)
 
 # write a list comprehension to get only the duplicate elements in the list
-names = ['apple', 'google', 'apple', 'yahoo', 'google']
-# Normal code
-count = 0
-l1=[]
-for i in names:
-    if names.count(i)>1:
-        count+=1
-        l1.append(i)
-
-print(l1)
+# names = ['apple', 'google', 'apple', 'yahoo', 'google']
+# # Normal code
+# count = 0
+# l1=[]
+# for i in names:
+#     if names.count(i)>1:
+#         count+=1
+#         l1.append(i)
+#
+# print(l1)
