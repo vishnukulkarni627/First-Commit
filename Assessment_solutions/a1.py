@@ -269,3 +269,120 @@ names1 = ['apple', 'google', 'yahoo', 'google', 'facebook', 'gmail', 'yahoo']
 #         l1.append(i)
 #
 # print(l1)
+
+# Print alternate characters of the string
+s = 'hello'
+res=s[::2]
+print(res)
+
+# Program to count the number of digits and alphabets in the
+string ="hai 1234 python23"
+count_alpha = 0
+count_digit = 0
+for i in string:
+    if "a"<= i <="z":
+        count_alpha+=1
+    elif "0" <= "9":
+        count_digit+=1
+print(count_digit)
+print(count_alpha)
+
+# Print the item and its corresponding index in the list
+l = ["hello", 'hai', '123']
+for index, item in enumerate(l):
+    print(item, index)
+
+# Printing alternate items of the list
+l = ["hello", 'hai', '123']
+print(l[::2])
+
+# Iterate over multiple lists simultaneously
+l = [1,2]
+l1 = [3,4]
+for i in zip(l,l1):
+    print(i)
+
+# Program to print filenames ending with pdf.
+files = ['youtube.txt', 'amazon.pdf', 'facebook.pdf', 'google.pdf', 'apple.doc']
+for i in files:
+    if i[-3:] in 'pdf':
+        filename, ext = (i.split("."))
+        print(filename)
+
+# Print the extension of each file name in the list
+files = ['youtube.txt', 'yahoo.pdf', 'microsoft.doc', 'apple.xls', 'amazon.xml', 'flipkart.xlsx']
+for i in files:
+    filename, ext = i.split(".")
+    print(ext)
+# Program to print the length of each word in the list
+l = ["hello", 'hai', '123']
+for i in l:
+    print(len(i))
+# Program to print the length of each word in the list in th form of tuples
+l = ["hello", 'hai', '123']
+for i in l:
+    print((i, len(i)))
+
+# Print only key's of the dictionary
+d ={"abhi": 'bijapur', "raghya": "baglkot", "rashmi":"kengeri", "jaya":"poythsbackside"}
+for keys, values in d.items():
+    print(keys, end=" ")
+print()
+# Print Values of the dictionary
+for values in d.values():
+    print(values,end=" ")
+print()
+
+# Print index and item of the dictionary
+for index, item in enumerate(d):
+    print(index,item, end=" ")
+# Count number of words in a sentence using get method
+sentence = 'hello world hello world welcome to python'
+count = 0
+words = sentence.split()
+
+print()
+# Counting number of characters in a string
+s = 'abracadabraca'
+count = 0
+for i in s:
+    if i.isalpha():
+        count+=1
+print(count)
+
+print()
+#  Counting number of vowels in a string
+s = "helloabhishek"
+count = 0
+for i in s:
+    if i.lower() in "aeiou":
+        count+=1
+print(count)
+
+print()
+
+# Counting occurrences of word in the string
+sentence = "hello world welcome to python hello hi hello hello"
+words = sentence.split()
+d ={}
+for word in words:
+    if word not in d:
+        d[word] = words.count(word)
+
+print(d)
+
+# Counting occurrences of each character in the string
+s = 'abracadabraca'
+dd = {}
+for i in s:
+    if i not in dd:
+        dd[i] =s.count(i)
+print(dd)
+
+# Adding items of two lists corresponding to their indices
+l = []
+a = [1, 2, 3, 4]
+b = [5, 6, 7, 8]
+for i1, i2 in zip(a,b):
+    l.append(i1+i2)
+print(l)
